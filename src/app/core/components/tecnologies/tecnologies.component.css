@@ -1,0 +1,17 @@
+.tecnologies {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  animation-name: component-transition;
+  animation-duration: 1s;
+}
+
+@keyframes component-transition {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}

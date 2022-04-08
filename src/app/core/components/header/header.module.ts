@@ -3,20 +3,25 @@ import { CommonModule } from "@angular/common";
 import { LogoComponent } from "./logo/logo.component";
 import { HeaderComponent } from "./header.component";
 import { SocialMediaComponent } from "./socialmedia/socialmedia.component";
+import { NavBarComponent } from "./navbar/navbar.component";
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   declarations: [
     HeaderComponent,
     LogoComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    NavBarComponent
   ],
   exports: [
     HeaderComponent,
     LogoComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    NavBarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class HeaderModule {}
