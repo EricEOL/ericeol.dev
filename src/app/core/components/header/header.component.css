@@ -1,3 +1,14 @@
 header {
   width: 100%;
+  padding: 50px 200px 50px 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+hr {
+  border: 1px solid #131316;
+  width: 90%;
+  margin: 0 auto;
 }

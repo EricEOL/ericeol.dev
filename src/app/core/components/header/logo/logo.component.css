@@ -1,0 +1,26 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+
+  margin-right: 20px;
+}
+
+.logo-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-titles strong {
+  font-size: 45px;
+}
+
+.logo-titles span {
+  font-size: 25px;
+  letter-spacing: 3px;
+}
