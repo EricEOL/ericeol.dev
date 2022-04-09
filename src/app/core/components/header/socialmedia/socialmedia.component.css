@@ -8,4 +8,13 @@
 .socialmedia img {
   width: 40px;
   height: 40px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: 0.2s;
 }
+
+.socialmedia img:hover {
+  background-color:  #2d6a4f;
+}
+
+

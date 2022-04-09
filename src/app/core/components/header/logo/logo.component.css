@@ -4,23 +4,27 @@
 }
 
 .logo img {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-
-  margin-right: 20px;
+  width: 90px;
 }
 
-.logo-titles {
-  display: flex;
-  flex-direction: column;
+.logo p {
+  margin-left: 5px;
+  margin-bottom: 5px;
+
+  font-size: 40px;
+  animation-name: cursor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
-.logo-titles strong {
-  font-size: 45px;
-}
-
-.logo-titles span {
-  font-size: 25px;
-  letter-spacing: 3px;
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

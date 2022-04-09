@@ -6,10 +6,16 @@
 
 .navbar ul {
   list-style: none;
-  width: 40%;
-
   display: flex;
   justify-content: space-evenly;
+}
+
+.navbar ul li {
+  margin-right: 30px;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
 }
 
 .navbar ul a {

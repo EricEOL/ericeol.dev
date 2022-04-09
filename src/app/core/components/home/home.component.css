@@ -1,10 +1,92 @@
-.aboutme {
+.home {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 60px;
 
   animation-name: component-transition;
   animation-duration: 1s;
+}
+
+.home .presentation {
+  width: 450px;
+  animation-name: stoped;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.home .presentation p {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.home .presentation .hello {
+  margin-bottom: -10px;
+}
+
+.home .presentation .subtitle {
+  letter-spacing: 3px;
+  text-decoration: underline;
+}
+
+.home .presentation strong {
+  font-size: 34px;
+  line-height: 50px;
+}
+
+.home .presentation strong span {
+  font-size: 44px;
+  color: #2d6a4f;
+}
+
+.home .portifolio .portifolio-images {
+  width: 600px;
+}
+
+.home .portifolio p {
+  margin-top: -100px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black,
+               2px 2px 4px black,
+               4px 4px 6px #2d6a4f;
+  text-align: center;
+  font-size: 30px;
+}
+
+.home .portifolio .icon-image {
+  width: 60px;
+  margin-top: 10px;
+
+  animation-name: arrow-down;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+
+}
+
+@keyframes arrow-down {
+  0% {
+    margin-top: 10px;
+  }
+  50% {
+    margin-top: 30px;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
+
+@keyframes stoped {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: -20px;
+  }
+  100% {
+    margin-top: 0px;
+  }
 }
 
 @keyframes component-transition {
