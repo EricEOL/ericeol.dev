@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { AboutMeComponent } from './core/components/aboutme/aboutme.component';
 import { HeaderModule } from './core/components/header/header.module';
 import { HomeComponent } from './core/components/home/home.component';
-import { TecnologiesComponent } from './core/components/tecnologies/tecnologies.component';
+import { ProjectsComponent } from './core/components/projects/projects.component';
+import { SocialMediaComponent } from './shared/socialmedia/socialmedia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    SocialMediaComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -33,8 +36,8 @@ import { TecnologiesComponent } from './core/components/tecnologies/tecnologies.
         pathMatch: 'full'
       },
       {
-        path: 'tecnologies',
-        component: TecnologiesComponent,
+        path: 'projects',
+        component: ProjectsComponent,
         pathMatch: 'full'
       }
     ])

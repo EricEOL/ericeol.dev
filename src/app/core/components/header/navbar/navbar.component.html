@@ -1,9 +1,11 @@
 <nav class="navbar">
   <ul>
     <li><a [routerLink]="['/home']" routerLinkActive="active">Home</a></li>
-    <li><a [routerLink]="['/a']" routerLinkActive="active">Projetos</a></li>
-    <li><a [routerLink]="['/tecnologies']" routerLinkActive="active">Tecnologias</a></li>
+    <li><a [routerLink]="['/projects']" routerLinkActive="active">Projetos</a></li>
     <li><a [routerLink]="['/aboutme']" routerLinkActive="active">Sobre mim</a></li>
     <li><a href="#">Blog</a></li>
+    <li>
+      <button class="changeTheme" (click)="theme()">theme</button>
+    </li>
   </ul>
 </nav>

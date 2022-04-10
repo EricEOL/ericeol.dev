@@ -5,4 +5,11 @@ import { Component } from "@angular/core";
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavBarComponent {}
+export class NavBarComponent {
+
+  theme(): boolean {
+    document.body.classList.toggle('lightTheme');
+    return true;
+  }
+
+}

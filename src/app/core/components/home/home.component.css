@@ -11,9 +11,6 @@
 
 .home .presentation {
   width: 450px;
-  animation-name: stoped;
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
 }
 
 .home .presentation p {
@@ -67,25 +64,13 @@
 
 @keyframes arrow-down {
   0% {
-    margin-top: 10px;
+    transform: translateY(10px);
   }
   50% {
-    margin-top: 30px;
+    transform: translateY(30px);
   }
   100% {
-    margin-top: 10px;
-  }
-}
-
-@keyframes stoped {
-  0% {
-    margin-top: 0px;
-  }
-  50% {
-    margin-top: -20px;
-  }
-  100% {
-    margin-top: 0px;
+    transform: translateY(10px);
   }
 }
 
