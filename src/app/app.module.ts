@@ -14,7 +14,8 @@ import { SocialMediaComponent } from './shared/socialmedia/socialmedia.component
     AppComponent,
     AboutMeComponent,
     SocialMediaComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

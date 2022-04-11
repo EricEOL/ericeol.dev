@@ -41,7 +41,7 @@ a.active::after {
   height: 20px;
   border-radius: 32px;
   background: #fff;
-
+  cursor: pointer;
   display: flex;
   align-items: center;
 }
@@ -52,9 +52,11 @@ a.active::after {
   width: 20px;
   height: 22px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #5B5C62;
   box-shadow: 0 0px 15px #2020203d;
   border-right: 1px solid lightgray;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 #btnControl {
@@ -67,6 +69,7 @@ a.active::after {
   animation-fill-mode: forwards;
   border-left: 1px solid lightgray;
   border-right: none;
+  background: #fec89a;
 }
 
 #btnControl:not(checked) + label > .circle.checked {

@@ -3,12 +3,14 @@
 
 :root {
   --bg-color: #1C1C21;
+  --bg-secondary: #26262C;
   --text-color: #f8f7ff;
   --text-details: #2d6a4f;
 }
 
 :root .lightTheme {
-  --bg-color: #f0efeb;
+  --bg-color: #F8F9FA;
+  --bg-secondary: #E9ECEF;
   --text-color: #1C1C21;
   --text-details: #2d6a4f;
 }
