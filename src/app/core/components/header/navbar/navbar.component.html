@@ -5,7 +5,11 @@
     <li><a [routerLink]="['/aboutme']" routerLinkActive="active">Sobre mim</a></li>
     <li><a href="#">Blog</a></li>
     <li>
-      <button class="changeTheme" (click)="theme()">theme</button>
+      
+      <input type="checkbox" id="btnControl"/>
+      <label (click)="theme()" class="theme-button" for="btnControl">
+        <div id="circle" class="circle"></div>
+      </label>
     </li>
   </ul>
 </nav>

@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
 :root {
   --bg-color: #1C1C21;
   --text-color: #f8f7ff;
+  --text-details: #2d6a4f;
 }
 
 :root .lightTheme {
   --bg-color: #f0efeb;
   --text-color: #1C1C21;
+  --text-details: #2d6a4f;
 }
 
 * {
@@ -19,5 +22,9 @@
 body {
   background: var(--bg-color);
   font-family: 'Montserrat', sans-serif;
+  color: var(--text-color);
+}
+
+a {
   color: var(--text-color);
 }

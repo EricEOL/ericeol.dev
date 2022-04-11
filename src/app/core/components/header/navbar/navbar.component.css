@@ -21,7 +21,6 @@
 .navbar ul a {
   padding: 20px 0 20px 0;
   text-decoration: none;
-  color: #f8f7ff;
 }
 
 a.active::after {
@@ -36,6 +35,47 @@ a.active::after {
   animation-duration: 1s;
 }
 
+.theme-button {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 32px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+}
+
+.theme-button .circle {
+  position: absolute;
+  left: -2px;
+  width: 20px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0px 15px #2020203d;
+  border-right: 1px solid lightgray;
+}
+
+#btnControl {
+  display: none;
+}
+
+#btnControl:checked + label > .circle.unchecked {
+  animation-name: unchecked;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  border-left: 1px solid lightgray;
+  border-right: none;
+}
+
+#btnControl:not(checked) + label > .circle.checked {
+  animation-name: checked;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  border-right: 1px solid lightgray;
+}
+
 @keyframes nav-active {
   0% {
     width: 0%;
@@ -45,24 +85,22 @@ a.active::after {
   }
 }
 
-/*
-
-.navbar ul a.active {
-  border-bottom: 3px solid #2d6a4f;
-  border-radius: 2px;
-}
-
-.active {
-  animation-name: component-transition;
-  animation-duration: 1s;
-}
-
-@keyframes component-transition {
+@keyframes unchecked {
   0% {
-    margin-left: -100%;
+    transform: translateX(0);
   }
+
   100% {
-    margin-left: 0;
+    transform: translateX(24px);
   }
-} 
-*/
+}
+
+@keyframes checked {
+  0% {
+    transform: translateX(24px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -11,9 +11,12 @@
   border: 2px solid transparent;
   border-radius: 50%;
   transition: 0.2s;
+  color: #fff;
+  background-color: #fff;
 }
 
 .socialmedia img:hover {
   transform: scale(1.2);
+  background-color: var(--text-details);
 }
 
