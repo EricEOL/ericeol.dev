@@ -63,20 +63,30 @@ a.active::after {
   display: none;
 }
 
-#btnControl:checked + label > .circle.unchecked {
-  animation-name: unchecked;
+#btnControl:checked + label > .circle.checked {
+  animation-name: checked;
   animation-duration: 0.4s;
   animation-fill-mode: forwards;
   border-left: 1px solid lightgray;
   border-right: none;
   background: #fec89a;
+
+  background-image: url('/assets/icons/sun.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
 }
 
-#btnControl:not(checked) + label > .circle.checked {
-  animation-name: checked;
+#btnControl:not(checked) + label > .circle.unchecked {
+  animation-name: unchecked;
   animation-duration: 0.4s;
   animation-fill-mode: forwards;
   border-right: 1px solid lightgray;
+
+  background-image: url('/assets/icons/moon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
 }
 
 @keyframes nav-active {
@@ -88,7 +98,7 @@ a.active::after {
   }
 }
 
-@keyframes unchecked {
+@keyframes checked {
   0% {
     transform: translateX(0);
   }
@@ -98,7 +108,7 @@ a.active::after {
   }
 }
 
-@keyframes checked {
+@keyframes unchecked {
   0% {
     transform: translateX(24px);
   }
