@@ -15,10 +15,12 @@
   </div>
 
   <div class="bottom">
-    <div *ngFor="let project of projects" class="card">
-    
+    <div *ngFor="let project of projects" class="card" >
+
       <div class="image">
-        <img [src]="project.images[0]" [alt]="project.name">
+        <a [href]="project.linkGithub" target="_blank">
+          <img [src]="project.images[0]" [alt]="project.name">
+        </a>
       </div>
       
       <div class="informations">
@@ -30,13 +32,13 @@
             Description about the application Lopes Notes. The application is a blog about tecnologies like js, css and react.
           </p>
           <div>
-            <span>ReactJS</span>
-            <span>NextJS</span>
-            <span>Styled Components</span>
+            <span *ngFor="let tecnology of project.tecnologies">
+              {{ tecnology}}
+            </span>
           </div>
         </div>
         <div class="links">
-          <a href="">
+          <a [href]="project.linkGithub">
             <img src="/assets/icons/github.svg" alt="github">
           </a>
           <a href="">

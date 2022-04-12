@@ -20,7 +20,7 @@ const projects: Project[] = [
     type: 'Front-end',
     linkGithub: '',
     images: ['https://raw.githubusercontent.com/EricEOL/alfa11-assessoria/main/readme_images/home.png'],
-    tecnologies: ['Javascript, CSS']
+    tecnologies: ['Javascript', 'CSS']
   }, 
   {
     id: 2,
@@ -29,7 +29,7 @@ const projects: Project[] = [
     type: 'Back-end',
     linkGithub: '',
     images: ['/assets/portifolio/api.png'],
-    tecnologies: ['Java, Spring Boot']
+    tecnologies: ['Java', 'Spring Boot']
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const projects: Project[] = [
     type: 'Front-end',
     linkGithub: '',
     images: ['https://raw.githubusercontent.com/EricEOL/administrex/main/public/screenshots/process_de.jpg'],
-    tecnologies: ['ReactJS, NextJS, Styled Components']
+    tecnologies: ['ReactJS', 'NextJS', 'Styled Components']
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const projects: Project[] = [
     type: 'Back-end',
     linkGithub: '',
     images: ['/assets/portifolio/api.png'],
-    tecnologies: ['NodeJS, Express, MongoDB']
+    tecnologies: ['NodeJS', 'Express', 'MongoDB']
   },
   {
     id: 5,
@@ -56,7 +56,7 @@ const projects: Project[] = [
     type: 'Front-end',
     linkGithub: '',
     images: ['https://raw.githubusercontent.com/EricEOL/kadu_acessorios/main/readme_images/desktop_10.jpg'],
-    tecnologies: ['ReactJS, NextJS, Chakra UI']
+    tecnologies: ['ReactJS', 'NextJS', 'Chakra UI']
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ const projects: Project[] = [
     type: 'Back-end',
     linkGithub: '',
     images: ['/assets/portifolio/api.png'],
-    tecnologies: ['Java, Spring Boot']
+    tecnologies: ['Java', 'Spring Boot']
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ const projects: Project[] = [
     type: 'Front-end',
     linkGithub: '',
     images: ['https://raw.githubusercontent.com/EricEOL/lopesnotes/main/readmeimages/p1-de.png'],
-    tecnologies: ['ReactJS, NextJS, Prismic CMS, CSS']
+    tecnologies: ['ReactJS', 'NextJS', 'Prismic CMS', 'CSS']
   },
   {
     id: 8,
@@ -83,6 +83,6 @@ const projects: Project[] = [
     type: 'Front-end',
     linkGithub: '',
     images: ['https://raw.githubusercontent.com/EricEOL/calc_service/main/readme/p1.png'],
-    tecnologies: ['ReactJS, NextJS, CSS']
+    tecnologies: ['ReactJS', 'NextJS', 'CSS']
   },
 ]
