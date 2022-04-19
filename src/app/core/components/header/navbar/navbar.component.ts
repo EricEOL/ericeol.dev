@@ -22,7 +22,7 @@ export class NavBarComponent implements OnInit {
 
     const button = document.querySelector('#circle');
 
-    if(this.lightTheme == false) {
+    if(!this.lightTheme) {
       button?.classList.remove('checked');
       button?.classList.add('unchecked');
     } else {

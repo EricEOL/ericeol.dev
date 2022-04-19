@@ -2,9 +2,55 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  padding: 20px 400px 0px 400px;
 
   animation-name: component-transition;
   animation-duration: 1s;
+}
+
+.aboutme header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutme header h2 {
+  font-size: 60px;
+  margin-top: 70px;
+}
+
+.aboutme header img {
+  border-radius: 50%;
+  filter: grayscale(0.5);
+}
+
+.aboutme section {
+  margin-top: 100px;
+}
+
+.aboutme section .card {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.aboutme section .card .card-title {
+  display: flex;
+}
+
+.aboutme section .card .card-content {
+  height: 0;
+  overflow: hidden;
+}
+
+.aboutme section .card input {
+  display: none;
+}
+
+.aboutme section .card input:checked ~ .card-content {
+  height: 100px;
 }
 
 @keyframes component-transition {
