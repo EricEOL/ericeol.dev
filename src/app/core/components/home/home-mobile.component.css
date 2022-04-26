@@ -8,11 +8,11 @@
 
   .home .presentation {
     max-width: 450px;
-    padding: 5px;
+    padding: 20px;
   }
   
   .home .presentation p {
-    font-size: var(--font-size-3);
+    font-size: var(--font-size-4);
     margin-bottom: 20px;
     margin-top: 10px;
   }
