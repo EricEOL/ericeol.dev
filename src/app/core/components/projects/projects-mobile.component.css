@@ -51,7 +51,7 @@
     max-width: fit-content;
     font-size: 20px;
     color: gray;
-    text-shadow: 0 0 15px black;
+    text-shadow: 0 0 15px var(--shadow-color);
   }
 
   .projects .top .top-content span {
