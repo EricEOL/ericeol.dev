@@ -11,7 +11,10 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit(): void {
     const button = document.querySelector('#circle');
+    const buttonMobile = document.querySelector('#circle-mobile');
+
     button?.classList.add('unchecked');
+    buttonMobile?.classList.add('unchecked');
 
     this.activeMobileMenu();
   }
@@ -23,13 +26,20 @@ export class NavBarComponent implements OnInit {
     else this.lightTheme = false;
 
     const button = document.querySelector('#circle');
+    const buttonMobile = document.querySelector('#circle-mobile');
 
     if (!this.lightTheme) {
       button?.classList.remove('checked');
       button?.classList.add('unchecked');
+
+      buttonMobile?.classList.remove('checked');
+      buttonMobile?.classList.add('unchecked');
     } else {
       button?.classList.remove('unchecked');
       button?.classList.add('checked');
+
+      buttonMobile?.classList.remove('unchecked');
+      buttonMobile?.classList.add('checked');
     }
 
   }

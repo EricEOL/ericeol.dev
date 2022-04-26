@@ -10,11 +10,11 @@
   .socialmedia img {
     width: 30px;
     height: 30px;
-    border: 2px solid transparent;
+    border: 2px solid var(--text-color);
     border-radius: 50%;
     transition: 0.2s;
     color: #fff;
-    background-color: #fff;
+    background-color: var(--text-color);
   }
 
   .socialmedia img:hover {

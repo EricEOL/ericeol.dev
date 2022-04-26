@@ -7,6 +7,7 @@
   --text-color: #f8f7ff;
   --text-details: #2d6a4f;
   --shadow-color: #131316;
+  --header-mb-color: #1A1A1F;
 
   --font-size-1: 60px;
   --font-size-2: 30px;
@@ -21,6 +22,7 @@
   --text-color: #1C1C21;
   --text-details: #2d6a4f;
   --shadow-color: lightgray;
+  --header-mb-color: #E9ECEF;
 }
 
 * {
