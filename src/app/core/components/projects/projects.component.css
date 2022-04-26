@@ -1,206 +1,206 @@
-.projects {
-  width: 100%;
-  min-height: 400px;
+  .projects {
+    width: 100%;
+    min-height: 400px;
 
-  margin: 0 auto;
+    margin: 0 auto;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 
-  animation-name: component-transition2;
-  animation-duration: 1s;
-}
+    animation-name: component-transition2;
+    animation-duration: 1s;
+  }
 
-.projects .top {
-  position: relative;
-  width: 100%;
-  height: 400px;
+  .projects .top {
+    position: relative;
+    width: 100%;
+    height: 400px;
 
-  box-shadow: 0px 4px 4px var(--shadow-color);
-  z-index: 2;
-}
+    box-shadow: 0px 4px 4px var(--shadow-color);
+    z-index: 2;
+  }
 
-.projects .top .top-content {
-  margin: 0 auto;
-  max-width: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .projects .top .top-content {
+    margin: 0 auto;
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.projects .top .top-content strong {
-  font-size: 60px;
-}
+  .projects .top .top-content strong {
+    font-size: 60px;
+  }
 
-.projects .top .top-content p {
-  margin: 15px 0 15px;
-  max-width: fit-content;
-  font-size: 20px;
-  color: gray;
-}
+  .projects .top .top-content p {
+    margin: 15px 0 15px;
+    max-width: fit-content;
+    font-size: 20px;
+    color: gray;
+  }
 
-.projects .top .top-content span {
-  font-size: var(--font-size-5);
-}
+  .projects .top .top-content span {
+    font-size: var(--font-size-5);
+  }
 
-.projects .top .top-content img {
-  max-width: 500px;
-  height: 380px;
-  margin-top: -50px;
-}
+  .projects .top .top-content img {
+    max-width: 500px;
+    height: 380px;
+    margin-top: -50px;
+  }
 
-.projects .bottom {
-  width: 100%;
-  background-color: var(--bg-secondary);
-  border-bottom: 1px solid black;
-  
-  z-index: 1;
-}
+  .projects .bottom {
+    width: 100%;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid black;
 
-.projects .bottom .bottom-content {
-  margin: 0 auto;
-  margin-top: 50px;
-  max-width: 1000px;
-}
+    z-index: 1;
+  }
 
-.projects .bottom .bottom-content .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 300px;
-  border-radius: 16px;
-  margin-bottom: 100px;
+  .projects .bottom .bottom-content {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 1000px;
+  }
 
-  transition: 0.2s;
-}
+  .projects .bottom .bottom-content .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+    margin-bottom: 100px;
 
-.projects .bottom .bottom-content .card:hover {
-  transform: translateY(-10px);
-}
+    transition: 0.2s;
+  }
 
-.projects .bottom .bottom-content .card:hover .image img {
-  filter: grayscale(0);
-}
+  .projects .bottom .bottom-content .card:hover {
+    transform: translateY(-10px);
+  }
 
-.projects .bottom .bottom-content .card.card-reverse {
-  flex-direction: row-reverse;
-}
+  .projects .bottom .bottom-content .card:hover .image img {
+    filter: grayscale(0);
+  }
 
-.projects .bottom .bottom-content .card .image {
-  border-radius: 8px;
-  box-shadow: 0 0 12px black;
-  width: 100%;
-  height: 100%;
-}
+  .projects .bottom .bottom-content .card.card-reverse {
+    flex-direction: row-reverse;
+  }
 
-.projects .bottom .bottom-content .card .image img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
+  .projects .bottom .bottom-content .card .image {
+    border-radius: 8px;
+    box-shadow: 0 0 12px black;
+    width: 100%;
+    height: 100%;
+  }
 
-  transition: 0.2s;
-  filter: grayscale(.7);
-  z-index: 0;
-}
+  .projects .bottom .bottom-content .card .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
 
-.projects .bottom .bottom-content .card .image img:hover {
-  filter: grayscale(0);
-}
+    transition: 0.2s;
+    filter: grayscale(.7);
+    z-index: 0;
+  }
 
-.projects .bottom .bottom-content .card .informations {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  padding: 16px;
-  z-index: 1;
-}
+  .projects .bottom .bottom-content .card .image img:hover {
+    filter: grayscale(0);
+  }
 
-.projects .bottom .bottom-content .card .informations > span {
-  color: gray;
-}
+  .projects .bottom .bottom-content .card .informations {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding: 16px;
+    z-index: 1;
+  }
 
-.projects .bottom .bottom-content .card.card-reverse .informations > span {
-  text-align: right;
-}
+  .projects .bottom .bottom-content .card .informations>span {
+    color: gray;
+  }
 
-.projects .bottom .bottom-content .card .informations strong {
-  display: block;
-  font-size: var(--font-size-2);
-  margin-bottom: 20px;
-}
+  .projects .bottom .bottom-content .card.card-reverse .informations>span {
+    text-align: right;
+  }
 
-.projects .bottom .bottom-content .card.card-reverse .informations strong {
-  text-align: right;
-}
+  .projects .bottom .bottom-content .card .informations strong {
+    display: block;
+    font-size: var(--font-size-2);
+    margin-bottom: 20px;
+  }
 
-.projects .bottom .bottom-content .card .informations .description {
-  background: var(--bg-color);
-  padding: 24px;
-  margin-left: -50px;
-  box-shadow: 0 0 12px black;
-}
+  .projects .bottom .bottom-content .card.card-reverse .informations strong {
+    text-align: right;
+  }
 
-.projects .bottom .bottom-content .card.card.card-reverse .informations .description {
-  margin-right: -50px;
-}
+  .projects .bottom .bottom-content .card .informations .description {
+    background: var(--bg-color);
+    padding: 24px;
+    margin-left: -50px;
+    box-shadow: 0 0 12px black;
+  }
 
-.projects .bottom .bottom-content .card .informations .description p {
-  font-size: var(--font-size-4);
-  margin-bottom: 20px;
-}
+  .projects .bottom .bottom-content .card.card.card-reverse .informations .description {
+    margin-right: -50px;
+  }
 
-.projects .bottom .bottom-content .card .informations .description div > span {
-  padding: 4px;
-  font-size: 12px;
-  background: gray;
-  margin-left: 8px;
-  color: var(--bg-color);
-  font-weight: bold;
-  border-radius: 4px;
-}
+  .projects .bottom .bottom-content .card .informations .description p {
+    font-size: var(--font-size-4);
+    margin-bottom: 20px;
+  }
 
-.projects .bottom .bottom-content .card .informations .links  {
-  margin-top: 20px;
-  text-align: right;
-}
+  .projects .bottom .bottom-content .card .informations .description div>span {
+    padding: 4px;
+    font-size: 12px;
+    background: gray;
+    margin-left: 8px;
+    color: var(--bg-color);
+    font-weight: bold;
+    border-radius: 4px;
+  }
 
-.projects .bottom .bottom-content .card.card-reverse .informations .links {
-  text-align: left;
-  margin-left: -50px;
-}
+  .projects .bottom .bottom-content .card .informations .links {
+    margin-top: 20px;
+    text-align: right;
+  }
 
-.projects .bottom .bottom-content .card .informations .links a img {
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
-  border-radius: 50%;
-  border: 1px solid transparent;
+  .projects .bottom .bottom-content .card.card-reverse .informations .links {
+    text-align: left;
+    margin-left: -50px;
+  }
 
-  transition: 0.2s;
-}
+  .projects .bottom .bottom-content .card .informations .links a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 1px solid transparent;
 
-.projects .bottom .bottom-content .card.card-reverse .informations .links a img {
-  margin-left: 0;
-  margin-right: 10px;
-}
+    transition: 0.2s;
+  }
 
-.projects .bottom .bottom-content .card .informations .links a img:hover {
-  background: gray;
-  transform: scale(1.2);
-  border: 1px solid gray;
-}
+  .projects .bottom .bottom-content .card.card-reverse .informations .links a img {
+    margin-left: 0;
+    margin-right: 10px;
+  }
 
+  .projects .bottom .bottom-content .card .informations .links a img:hover {
+    background: gray;
+    transform: scale(1.2);
+    border: 1px solid gray;
+  }
 
 @keyframes component-transition2 {
   0% {
     transform: translateY(100vh);
   }
+
   100% {
     transform: translateY(0);
   }

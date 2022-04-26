@@ -15,7 +15,7 @@ export class ProjectService {
 const projects: Project[] = [
   {
     id: 1,
-    name: 'Alfa 11 - Web Page',
+    name: 'Alfa 11',
     description: '',
     type: 'Front-end',
     linkGithub: '',
@@ -33,7 +33,7 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    name: 'Admex - Web Page',
+    name: 'Admex',
     description: '',
     type: 'Front-end',
     linkGithub: '',
@@ -51,7 +51,7 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    name: 'Kadu Acessórios - Web Page',
+    name: 'Kadu Acessórios',
     description: '',
     type: 'Front-end',
     linkGithub: '',
@@ -69,7 +69,7 @@ const projects: Project[] = [
   },
   {
     id: 7,
-    name: 'Lopes Notes - Web Page',
+    name: 'Lopes Notes',
     description: '',
     type: 'Front-end',
     linkGithub: '',
@@ -78,7 +78,7 @@ const projects: Project[] = [
   },
   {
     id: 8,
-    name: 'Previsão de Serviços - Web Page',
+    name: 'Previsão de Serviços',
     description: '',
     type: 'Front-end',
     linkGithub: '',

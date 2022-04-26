@@ -78,21 +78,28 @@
   }
 
   .projects .bottom .bottom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     margin: 0 auto;
-    margin-top: 50px;
     max-width: 1000px;
+    padding: 5px;
   }
 
   .projects .bottom .bottom-content .card {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 300px;
+    width: 99%;
+    min-height: 300px;
     border-radius: 16px;
-    margin-bottom: 100px;
-
     transition: 0.2s;
+
+    position: relative;
+    margin-bottom: 20px;
   }
 
   .projects .bottom .bottom-content .card:hover {
@@ -103,15 +110,11 @@
     filter: grayscale(0);
   }
 
-  .projects .bottom .bottom-content .card.card-reverse {
-    flex-direction: row-reverse;
-  }
-
   .projects .bottom .bottom-content .card .image {
     border-radius: 8px;
     box-shadow: 0 0 12px black;
     width: 100%;
-    height: 100%;
+    height: 200px;
   }
 
   .projects .bottom .bottom-content .card .image img {
@@ -131,46 +134,38 @@
   .projects .bottom .bottom-content .card .informations {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background: transparent;
     padding: 16px;
     z-index: 1;
+  
+    position: absolute;
+    bottom: -50px;
   }
 
-  .projects .bottom .bottom-content .card .informations>span {
+  .projects .bottom .bottom-content .card .informations > span {
     color: gray;
+    text-shadow: 0 0 12px black;
   }
 
-  .projects .bottom .bottom-content .card.card-reverse .informations>span {
-    text-align: right;
-  }
-
-  .projects .bottom .bottom-content .card .informations strong {
+  .projects .bottom .bottom-content .card .informations > strong {
     display: block;
     font-size: var(--font-size-2);
     margin-bottom: 20px;
-  }
-
-  .projects .bottom .bottom-content .card.card-reverse .informations strong {
-    text-align: right;
+    text-shadow: 0 0 12px black;
   }
 
   .projects .bottom .bottom-content .card .informations .description {
     background: var(--bg-color);
-    padding: 24px;
-    margin-left: -50px;
+    padding: 12 px;
     box-shadow: 0 0 12px black;
-  }
-
-  .projects .bottom .bottom-content .card.card.card-reverse .informations .description {
-    margin-right: -50px;
+    margin-left: 0;
   }
 
   .projects .bottom .bottom-content .card .informations .description p {
-    font-size: var(--font-size-4);
-    margin-bottom: 20px;
+    font-size: var(--font-size-5);
   }
 
   .projects .bottom .bottom-content .card .informations .description div>span {
@@ -184,34 +179,24 @@
   }
 
   .projects .bottom .bottom-content .card .informations .links {
-    margin-top: 20px;
     text-align: right;
-  }
-
-  .projects .bottom .bottom-content .card.card-reverse .informations .links {
-    text-align: left;
-    margin-left: -50px;
+    position: absolute;
+    right: 5px;
+    top: -30px;
   }
 
   .projects .bottom .bottom-content .card .informations .links a img {
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
     border-radius: 50%;
     border: 1px solid transparent;
 
-    transition: 0.2s;
-  }
-
-  .projects .bottom .bottom-content .card.card-reverse .informations .links a img {
-    margin-left: 0;
-    margin-right: 10px;
-  }
-
-  .projects .bottom .bottom-content .card .informations .links a img:hover {
     background: gray;
     transform: scale(1.2);
     border: 1px solid gray;
+
+    transition: 0.2s;
   }
 }
 
