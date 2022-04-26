@@ -31,8 +31,12 @@
   max-width: 1000px;
   margin: 0 auto;
   margin-top: 60px;
-  background: #131316;
   margin-bottom: 20px;
+}
+
+.aboutme section > .container-cards{
+  padding: 20px;
+  background: #131316;
 }
 
 .aboutme section .card {
