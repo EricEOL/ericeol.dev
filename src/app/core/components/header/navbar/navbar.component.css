@@ -1,26 +1,30 @@
 .navbar {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.navbar ul {
+.navbar .nav-desktop {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
 }
 
-.navbar ul li {
+.navbar .nav-desktop li {
   margin-right: 30px;
 }
 
-.navbar ul li:last-child {
+.navbar .nav-desktop li:last-child {
   margin-right: 0;
 }
 
-.navbar ul a {
+.navbar .nav-desktop a {
   padding: 20px 0 20px 0;
   text-decoration: none;
+}
+
+.navbar .nav-mobile {
+  display: none;
 }
 
 a.active::after {

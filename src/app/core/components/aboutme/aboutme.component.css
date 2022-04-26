@@ -3,14 +3,15 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 20px 400px 0px 400px;
 
   animation-name: component-transition;
   animation-duration: 1s;
 }
 
 .aboutme header {
-  width: 100%;
+  max-width: 100%;
+  min-width: 400px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,7 +19,7 @@
 
 .aboutme header h2 {
   font-size: 60px;
-  margin-top: 70px;
+  margin-right: 250px;
 }
 
 .aboutme header img {
@@ -27,6 +28,8 @@
 }
 
 .aboutme section {
+  max-width: 1000px;
+  margin: 0 auto;
   margin-top: 60px;
   background: #131316;
   margin-bottom: 20px;
@@ -94,7 +97,7 @@
 }
 
 .aboutme section .card input:checked ~ .card-content {
-  max-height: 500px;
+  max-height: 800px;
   color: #f8f7ff;
 }
 

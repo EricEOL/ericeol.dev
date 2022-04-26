@@ -1,49 +1,55 @@
 <section class="projects">
   <div class="top">
-    <div>
-      <strong>Meus Projetos</strong>
-      <p>
-        Tenho muito interesse na construção completa de uma aplicação, 
-        das regras de negócio mais importantes até a interação com o usuário final. <br/>
-      </p>
+    <div class="top-content">
+      <div>
+        <strong>Meus Projetos</strong>
+        <p>
+          Tenho muito interesse na construção completa de uma aplicação,
+          das regras de negócio mais importantes até a interação com o usuário final. <br />
+        </p>
 
-      <span>Veja alguns dos meus projetos no front-end e no back-end logo abaixo.</span>
+        <span>Veja alguns dos meus projetos no front-end e no back-end logo abaixo.</span>
+      </div>
+
+      <img src="/assets/portifolio/portifolio_back&front2.png" alt="back&front">
     </div>
-
-    <img src="/assets/portifolio/portifolio_back&front2.png" alt="back&front">
 
   </div>
 
   <div class="bottom">
-    <div *ngFor="let project of projects" class="card" >
+    <div class="bottom-content">
+      <div *ngFor="let project of projects" class="card">
 
-      <div class="image">
-        <a [href]="project.linkGithub" target="_blank">
-          <img [src]="project.images[0]" [alt]="project.name">
-        </a>
-      </div>
-      
-      <div class="informations">
-        <span>{{ project.type }}</span>
-        <strong>{{ project.name }}</strong>
-        
-        <div class="description">
-          <p>
-            Description about the application Lopes Notes. The application is a blog about tecnologies like js, css and react.
-          </p>
-          <div>
-            <span *ngFor="let tecnology of project.tecnologies">
-              {{ tecnology}}
-            </span>
-          </div>
+        <div class="image">
+          <a [href]="project.linkGithub" target="_blank">
+            <img [src]="project.images[0]" [alt]="project.name">
+          </a>
         </div>
-        <div class="links">
-          <a [href]="project.linkGithub">
-            <img src="/assets/icons/github.svg" alt="github">
-          </a>
-          <a href="">
-            <img src="/assets/icons/ext-link.svg" alt="ext-link">
-          </a>
+
+        <div class="informations">
+          <span>{{ project.type }}</span>
+          <strong>{{ project.name }}</strong>
+
+          <div class="description">
+            <p>
+              Description about the application Lopes Notes. The application is a blog about tecnologies like js, css
+              and
+              react.
+            </p>
+            <div>
+              <span *ngFor="let tecnology of project.tecnologies">
+                {{ tecnology}}
+              </span>
+            </div>
+          </div>
+          <div class="links">
+            <a [href]="project.linkGithub">
+              <img src="/assets/icons/github.svg" alt="github">
+            </a>
+            <a href="">
+              <img src="/assets/icons/ext-link.svg" alt="ext-link">
+            </a>
+          </div>
         </div>
       </div>
     </div>

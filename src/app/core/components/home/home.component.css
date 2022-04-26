@@ -10,7 +10,7 @@
 }
 
 .home .presentation {
-  width: 450px;
+  max-width: 450px;
 }
 
 .home .presentation p {

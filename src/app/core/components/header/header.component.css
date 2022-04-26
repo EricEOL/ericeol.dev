@@ -1,6 +1,6 @@
 header {
-  width: 100%;
-  padding: 50px 200px 50px 200px;
+  max-width: 1500px;
+  margin: 70px 5%;
 
   display: flex;
   align-items: center;

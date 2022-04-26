@@ -7,6 +7,12 @@
   --text-color: #f8f7ff;
   --text-details: #2d6a4f;
   --shadow-color: #131316;
+
+  --font-size-1: 60px;
+  --font-size-2: 30px;
+  --font-size-3: 20px;
+  --font-size-4: 18px;
+  --font-size-5: 16px;
 }
 
 :root .lightTheme {
