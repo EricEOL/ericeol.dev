@@ -27,7 +27,7 @@
   display: none;
 }
 
-a.active::after {
+.navbar .nav-desktop a.active::after {
   content: '';
   padding: 20px 0 0 0;
   width: 100%;

@@ -3,6 +3,8 @@
   .menu-hamburger {
     width: 35px;
     height: 40px;
+    cursor: pointer;
+    z-index: 2;
   }
 
   .menu-hamburger .bar, .menu-hamburger::after, .menu-hamburger::before {
@@ -29,9 +31,42 @@
   }
 
   .navbar {
+    position:static;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .navbar .nav-mobile.is-active {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+    list-style: none;
+    background: var(--bg-secondary);
+    padding-left: 0;
+    padding-top: 120px;
+    opacity: 0.9;
+  }
+
+  .navbar .nav-mobile li {
+    padding: 20px;
+    border-bottom: 1px solid var(--text-color);
+    width: 90%;
+    text-align: center;
+  }
+
+  .navbar .nav-mobile li:last-child {
+    border-bottom: 0;
+  }
+
+  .navbar .nav-mobile li a {
+    text-decoration: none;
   }
 
   .navbar .nav-desktop, .navbar .nav-mobile {
