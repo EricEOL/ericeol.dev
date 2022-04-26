@@ -55,8 +55,9 @@
   }
 
   .navbar .nav-mobile li {
+    font-weight: bold;
     padding: 20px;
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-details);
     width: 90%;
     text-align: center;
   }
