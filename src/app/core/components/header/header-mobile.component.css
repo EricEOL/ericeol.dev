@@ -3,8 +3,12 @@
   header {
     position: relative;
     max-width: 1500px;
-    padding: 30px 10px;
+    padding: 0 10px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     margin: 0 auto;
+
+    background-color: #1A1A1F;
 
     display: flex;
     align-items: center;
