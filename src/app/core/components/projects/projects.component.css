@@ -70,7 +70,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     border-radius: 16px;
     margin-bottom: 100px;
 
@@ -121,8 +121,10 @@
     z-index: 1;
   }
 
-  .projects .bottom .bottom-content .card .informations>span {
-    color: gray;
+  .projects .bottom .bottom-content .card .informations > span {
+    color: var(--text-details);
+    font-weight: bold;
+    text-shadow: 0 0 0 8px black;
   }
 
   .projects .bottom .bottom-content .card.card-reverse .informations>span {
@@ -155,11 +157,17 @@
     margin-bottom: 20px;
   }
 
-  .projects .bottom .bottom-content .card .informations .description div>span {
+  .projects .bottom .bottom-content .card .informations .description > div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .projects .bottom .bottom-content .card .informations .description div > span {
     padding: 4px;
     font-size: 12px;
     background: gray;
     margin-left: 8px;
+    margin-bottom: 8px;
     color: var(--bg-color);
     font-weight: bold;
     border-radius: 4px;
